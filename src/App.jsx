@@ -51,6 +51,7 @@ export default function App() {
           }
         />
         <Route path="/reset-password/:token" element={<ResetPassword />} />
+        <Route path="/test-route" element={<h1>Test Page</h1>} />
       </Routes>
     </Router>
   );
