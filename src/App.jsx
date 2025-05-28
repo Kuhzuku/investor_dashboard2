@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import InvestorDashboard from "./InvestorDashboard";
 import Login from "./Login";
+import ResetPassword from "./ResetPassword";
 
 export default function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -49,6 +50,7 @@ export default function App() {
             )
           }
         />
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
       </Routes>
     </Router>
   );
